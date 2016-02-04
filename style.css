@@ -1,0 +1,884 @@
+/*
+Theme Name: TriCoastal
+Theme URI: http://tricoastal.com
+Author: MARION Integrated Marketing
+Author URI: http://marion.com
+Description: Custom theme made for TriCoastal. This theme is fully responsive. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: TriCoastal
+
+*/
+
+/* # Imports
+---------------------------------------------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400);
+@import url(http://fonts.googleapis.com/css?family=Arapey:400italic,400);
+
+
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+.marginTop30px {
+	margin-top: 30px;
+}
+.marginBottom30px {
+	margin-bottom: 30px;
+}
+.admin-bar .navbar-fixed-top{
+	margin-top:30px;
+}
+.separationBottomAndLeft{
+	padding: 0 0 30px 0;
+}
+.separationLeft{
+	padding-left: 0px;
+}
+.separationBottom{
+	padding-bottom: 30px;
+}
+.blueFontColor{
+	color: #1C456A;
+}
+* a{
+	text-decoration: none;
+	color:#285572;
+}
+* a:hover{
+	color:#000000;
+	text-decoration: none;
+}
+a, a:active, a:visited{
+ 	text-decoration: none !important;
+ }
+
+body {
+	padding-bottom:20px;
+	font-family: arial;
+	font-family: 'Arapey', serif;
+	font-size: 14px; 
+}
+em{
+	font-style: italic;
+}
+section p{
+	font-family: arial;
+	font-family: 'Arapey', serif;
+	font-size: 18px;
+}
+.container{
+	max-width: 1024px;
+}
+ul{
+	list-style-image: url(images/bullet-u1978-fr.png) !important;
+}
+
+/*NC Displays No content, remove once all content has been entered*/
+.nc{
+	display: none;
+}
+.centertext{
+	text-align:center;
+}
+li {
+    font-size: 18px;
+}
+
+/* # Overrides
+---------------------------------------------------------------------------------------------------- */
+ul, menu, dir {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start:0px;
+}
+ul{
+	margin:0 0 20px 35px;
+}
+h1{
+	display: block;
+	font-size: 2em;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+h2{
+display: block;
+font-size: 1.5em;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+iframe {
+border: 0;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+}
+.row{
+	margin-left: 0;
+	margin-right:0;
+}
+.floatleft {
+  float: left; }
+
+.floatright {
+  float: right; }
+textarea{
+	width:100%;
+}
+
+.clear-pad{
+	padding-left: 0px;
+	padding-right:0px;
+}
+.clear-padL{
+	padding-left: 0px;
+}
+.clearfix{
+	clear: both;
+}
+/* # Headings
+---------------------------------------------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6{
+	font-family: arial;
+	font-family: 'Arapey', serif;	
+}
+h2{
+	color: #1C456A;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+.sectiontitle h1{
+	position: relative;
+	z-index: 50;
+	color: #FFFFFF;
+    font-size: 18px;
+    line-height: 26px;
+    /*font-family: muli, sans-serif;*/
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: 400;
+    height: 65px;
+}
+
+/* # Header
+---------------------------------------------------------------------------------------------------- */
+
+header{
+	background: url(images/headerbar2.jpg) no-repeat center bottom, url(images/header-sm-bg.jpg) repeat center bottom;
+	height: 140px;
+	position: relative;
+    z-index: 100;
+}
+p.slogan{
+	font-size: 23px;
+	font-style: italic;	
+	margin-top: 90px;
+	color: #5B7688;
+}
+
+header.login {
+   background:none;
+   height: 215px;
+}
+/* ## Main Navigation (Header Widget Navigation Below)
+--------------------------------------------- */
+.navbar{
+	border-radius:0;
+	padding-top:0px;
+	position: relative;
+	z-index: 50;
+    min-height: 37px;
+    margin-bottom: 0px;
+    border: none;
+}
+.navbar-brand {
+	float: left;
+	height: 135px;
+	padding: 5px 0 15px 0px;
+	font-size: 18px;
+	line-height: 20px;
+}
+.navbar-brand.internal {
+	padding: 0;
+	height: 107px;
+}
+.navbar-inverse { 
+	background: #0F405F;
+	border: none
+}
+.navbar-nav li {
+	display: inline-block;
+	float: left;
+	position: relative;
+	z-index: 50;
+}
+.navbar-inverse .navbar-nav>li>a { 
+	color:#fff;
+	font-size:13px;
+	/*font-family: muli, sans-serif;*/
+	font-family: arial;
+	text-decoration: none;
+	font-weight: 300;
+	padding:10px 11px;
+	border-right: 1px solid #5b5b5b;
+	background: #0F405F;
+	transition: all .4s ease-out;
+	position: relative;
+	z-index: 50;
+}
+.navbar-inverse .navbar-nav>li.current_page_item a{
+	background:#6C91B3;
+}
+.navbar-inverse .navbar-nav>li a:hover {
+	background: #6C91B3;
+}
+.navbar-inverse .navbar-nav li.menu-item-object-page >ul >li >a{
+	background:#eee;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border:none;
+}
+.navbar-collapse {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* ## Header Widget Navigation
+--------------------------------------------- */
+
+
+/* ## Sidebar
+--------------------------------------------- */
+
+.sidebar h3 {
+	color: #000;
+}
+
+/* ## Slideshow
+--------------------------------------------- */
+.slidedescription{
+	margin-top:20px;
+	position: absolute;
+	color:#1C456A;
+}
+.slidedescription p{
+	font-size: 28px;
+	line-height: 34px;
+	font-weight: 400;
+	font-style: italic;
+	text-align: left;
+	max-width: 501px;
+}
+.gradientoverlay{
+    background: -webkit-gradient(linear, left center, right center, color-stop(4%, rgba(255,255,255,0.56)),to(rgba(108,145,179,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0.56) 4%,rgba(108,145,179,0) );
+    background: linear-gradient(to right,rgba(255,255,255,0.56) 4%,rgba(108,145,179,0) );
+    -pie-background: linear-gradient(left,rgba(255,255,255,0.56) 4%,rgba(108,145,179,0) );
+    border-color: #000000;
+    background-size: 100% auto;
+    z-index: 250;
+    height: 287px;
+    margin-bottom: -287px;
+}
+img.rsImg{
+	position: relative;
+	z-index: -1;
+}
+	/* ## Rotating Text Slideshow
+	--------------------------------------------- */
+.rotatingtext p{
+	font-size: 28px;
+	line-height: 34px;
+	font-style: italic;
+	color: #1C456A;
+	font-family:initial;
+    font-weight: 400;
+}
+/* ## Homepage
+--------------------------------------------- */
+.frontpage_sections{
+	background: -webkit-gradient(linear, center top, center bottom, from(rgba(255,255,255,0.13)),color-stop(100%, rgba(177,177,174,0)));
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0.13) ,rgba(177,177,174,0) 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,0.13) ,rgba(177,177,174,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#82FFFFFF, endColorstr=#00B1B1AE, GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#82FFFFFF', endColorstr='#00B1B1AE', GradientType=0)";
+}
+.frontpage_sections_content{
+	min-height: 360px;
+}
+.frontpage_sections_content h2 a{
+	display: block;
+	color: #A2BDD7;
+	text-decoration: none;
+	font-weight: 400;
+	font-family: "raleway" sans-serif;
+	font-size: 16px;
+	padding: 15px 0 45px 0;
+	text-align: center;
+	line-height: normal;
+}
+.frontpage_sections_content h2 a:hover{
+	color:#fff;
+}
+.frontpage_sections a{
+	text-decoration: none; 
+	color:#fff;
+}
+.frontpage_sections_content > ul {
+	 margin:0 0 10px 30px;
+	}
+.link{
+	text-align: center;
+}
+
+/* ## Generic Internal
+--------------------------------------------- */
+.titlegradient{
+	z-index: 146;
+    background: #323638 url("../images/u881-grad.png") repeat-y left top;
+    background: -webkit-gradient(linear, left center, right center, from(#3A70A0),color-stop(100%, #1C456A));
+    background: -webkit-linear-gradient(left,#3A70A0 ,#1C456A 100%);
+    background: linear-gradient(to right,#3A70A0 ,#1C456A 100%);
+    border-color: #000000;
+    border-radius: 0px 0px 34px 0px;
+    position: relative;
+	margin: 0 57% -40px 0;
+    padding: 0 0 0 0px; 
+    height: 65px;
+    z-index: 10;
+}
+.linenbg{
+	background: url(images/linen2.jpg) repeat center top;
+	-webkit-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	-moz-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+}
+.linenbg-dark{
+	background: url(images/linen-darker.png) repeat center top;
+	-webkit-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	-moz-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+}
+.solidtan{
+	background-color:#E6E4E1;
+	-webkit-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	-moz-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+}
+.solidblack{
+	border-color: #000000;
+    background-color: #0F405F;
+    border-top: 4px solid #0F405F;
+}
+.solidgrey{
+	background: #ebeaef;
+	-webkit-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	-moz-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+}
+.greygradient{
+	background: -webkit-gradient(linear, center top, center bottom, from(#DBDBDB),color-stop(100%, #FFFFFF));
+    background: -webkit-linear-gradient(top,#DBDBDB ,#FFFFFF 100%);
+    background: linear-gradient(to bottom,#DBDBDB ,#FFFFFF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDBDBDB, endColorstr=#FFFFFFFF, GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDBDBDB', endColorstr='#FFFFFFFF', GradientType=0)";
+    -webkit-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	-moz-box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+	box-shadow: inset 0px -9px 10px -4px rgba(0,0,0,0.51);
+}
+.media p{
+    line-height: 34px;
+    font-size: 28px;
+    font-family: arial;
+    font-family: 'Arapey', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.font30{
+	font-size: 30px;
+}
+.font42{
+	font-size: 42px;
+	line-height: 44px;
+}
+
+.alignnone{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ## Life Settlements Explained
+--------------------------------------------- */
+.container.why-sell p, li{
+	font-size: 20px;
+}
+.separationBottom ul{
+	color: #1C456A;
+}
+
+
+/* ## Investing in Life Settlements
+--------------------------------------------- */
+.separationBottomAndLeft ul{
+	color: #1C456A;	
+}
+
+
+/* ## Why TriCoastal
+--------------------------------------------- */
+.acquisitionListOne p, .acquisitionListTwo p{
+	text-align: left;
+	font-size: 24px;
+}
+.tabbedbg{
+	background: -webkit-gradient(linear, center top, center bottom, from(rgba(251,251,251,0.34)),color-stop(100%, #E6E4E1));
+    background: -webkit-linear-gradient(top,rgba(251,251,251,0.34) ,#E6E4E1 100%);
+    background: linear-gradient(to bottom,rgba(251,251,251,0.34) ,#E6E4E1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#56FBFBFB, endColorstr=#FFE6E4E1, GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#56FBFBFB', endColorstr='#FFE6E4E1', GradientType=0)";
+    border-style: none;
+    border-color: transparent;
+}
+li.tab-link{
+	border-color: #999999;
+	background-color: #183754;
+}
+li.tab-link2{
+	border-color: #999999;
+    background-color: #183754;	
+}
+li.tab-link3{
+	border-color: #999999;
+	background-color: #183754;
+}
+ul.tabs{
+      margin: 0px;
+      padding: 0 0 0px 0;
+      list-style: none;
+    }
+    .why ul.tabs li{
+      color: #ffffff;
+      font-weight: bold;
+      display: inline-block;
+      width:33.3333%;
+      float: left;
+      padding: 10px 15px;
+      cursor: pointer;
+
+	  -webkit-border-top-left-radius: 12px;
+	  -webkit-border-top-right-radius: 12px;
+	  -moz-border-radius-topleft: 12px;
+	  -moz-border-radius-topright: 12px;
+	  border-top-left-radius: 12px;
+	  border-top-right-radius: 12px;
+    }
+    .investment ul.tabs li{
+      color: #ffffff;
+      font-weight: bold;
+      display: inline-block;
+      width:20%;
+      float: left;
+      padding: 10px 15px;
+      cursor: pointer;
+
+	  -webkit-border-top-left-radius: 12px;
+	  -webkit-border-top-right-radius: 12px;
+	  -moz-border-radius-topleft: 12px;
+	  -moz-border-radius-topright: 12px;
+	  border-top-left-radius: 12px;
+	  border-top-right-radius: 12px;
+    }
+
+    ul.tabs li.current{
+      background: #6C91B3;
+      color: #FFF;
+    }
+    ul.tabs li.current .fa-caret-right{
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    .tab-content{
+      display: none;
+      padding: 15px;
+    }
+
+    .tab-content.current{
+      display: inherit;
+    }
+.checklist_title{
+	border-bottom: 1px solid #000000;
+}
+/* ## Media Coverage
+--------------------------------------------- */
+.internalslide{
+	color: #1C456A;
+	font-size: 28px;
+	font-family: arial;
+	font-family: 'Arapey', serif;
+	font-style: italic;
+}
+
+
+/* ## Contact
+--------------------------------------------- */
+.contacttext span{
+	color: #30597E;
+    line-height: 31px;
+    font-size: 26px;
+    font-family: arial;
+    font-family: 'Arapey', serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 40px;
+}
+.findreptext p{
+	color: #30597E;
+    line-height: 31px;
+    font-size: 26px;
+    font-family: arial;
+    font-family: 'Arapey', serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0px;
+}
+.contactpage {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.google-maps {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	/*position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%!important;
+	height: 100%!important;*/
+}
+
+/* ## Investor Login
+--------------------------------------------- */
+a.loginlogo img {
+width: 351px;
+height: 207px;
+padding: 0px;
+margin:10px auto 0 auto; 
+display: block;
+}
+body.page-id-317{
+	background-color: #E8F9FC;	
+	font-size: 16px;
+}
+/* ## Agent Login
+--------------------------------------------- */
+.blackopacity{
+	background-color:rgba(12,30,46,0.46);
+	padding: 10px;
+	margin-bottom: 25px;
+	min-height: 528px;
+}
+.brochures{
+	margin-bottom: 15px;
+}
+.brochures p{
+    color: #E8F9FC;
+    line-height: 18px;
+    font-size: 15px;
+    font-family: 'muli', sans-serif;
+    font-weight: 400;
+}
+.brochures p em{
+	font-family: 'arapey', sans-serif;
+    font-style: italic;
+}
+.agentToolbox h3{
+	color: #1C456A;
+    line-height: 28px;
+    font-size: 23px;
+    font-family: 'muli', sans-serif;
+    font-weight: 400;
+}
+/* ## Footer
+--------------------------------------------- */
+.footercta{
+	color: #30597E;
+    text-align: center;
+    font-size: 19px;
+    line-height: 23px;
+    font-family: 'Arapey', sans-serif;
+    font-weight: 400;
+}
+footer{
+	padding: 30px 0 15px;
+	border-color: #000000;
+    background-color: #10375B;
+    border-top: 4px solid #3A79B3;
+    font-size: 16px;
+    color: #8BBAE4; 
+}
+footer a{
+	color: #8BBAE4; 
+	text-decoration: underline !important;
+}
+footer a:hover{
+	color:#ffffff;
+}
+.social {
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin: 10px 10px 0 0; 
+}
+i.fa.fa-facebook-square, i.fa.fa-twitter-square, i.fa.fa-pinterest-square {
+	font-size:26px; 
+}
+i.fa.fa-facebook-square:hover, i.fa.fa-twitter-square:hover, i.fa.fa-pinterest-square:hover {
+	opacity: 0.7; 
+}
+.socialicons{
+	float:right;
+	position: relative;
+    z-index: 200;
+    min-height: 30px;
+    margin: 0px 0px -30px 0px;
+}
+
+/* ## Widgets
+--------------------------------------------- */
+.widget {
+	margin: 10px 0 30px;
+}
+
+
+/* ## Media Queries
+--------------------------------------------- */
+@media screen and (max-width: 1199px) {
+	#logo {
+    	float: none;
+	}
+	
+	
+
+
+	
+}
+
+@media screen and (max-width: 991px) {
+
+	/* ## Front-page
+	--------------------------------------------- */
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    	float: none;
+    }
+    p.slogan {
+    	font-size: 23px;
+    	margin-top: 76px;
+	}
+	.slidedescription p {
+    	font-size: 27px;
+	}
+	.frontpage_sections_content h2 a {
+		padding: 15px 0 0px 0;
+	}
+	body {
+    	padding-bottom: 0px;
+	}
+	.container p{
+		padding-top: 15px;
+	}
+	.frontpage_sections_content > ul {
+	    padding-top: 15px;
+	}
+	.container {
+    	width: inherit;
+	}
+
+	.frontpage_sections_content > h2{
+	    height: 45px;
+    	border-color: #000000;
+    	background-color: #0F405F;
+	    min-height: 1px;
+	    margin: 0px -30px; 
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+	}
+	.frontpage_sections_content h2 a{
+		text-align: left;
+		margin:0 30px;
+	}
+	.frontpage_sections_content{
+	min-height: auto;
+}
+
+	/* ## Life Settlements Explained
+	--------------------------------------------- */
+	.titlegradient {
+		margin: 0 30% -40px 0;
+	}
+}
+@media (min-width: 768px){
+	.modal-dialog {
+    	width: 700px;
+    	margin: 30px auto;
+    }
+}
+@media screen and (max-width: 767px) {
+
+	/* ## Nav-bar
+	--------------------------------------------- */
+	
+	.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.nav ul{
+		position: relative;
+		background: #f0f0f0;
+		z-index: 9999;	
+	}
+	.nav>ul>li>:hover{
+		background-color: #888;
+	}
+	.navbar-inverse{
+		position: relative;
+		z-index: 999;
+	}
+	.navbar-inverse .navbar-nav>li{
+		color:#fff;
+		background-color:#888;
+		font-size:16px;
+		font-family: arial;
+		font-family: 'Arapey', serif;
+		text-decoration: none;
+		display: block;
+		float: none;
+	}
+	.navbar-inverse .navbar-nav>li a{
+		max-width: 767px;
+		margin-top: 0px;
+		text-align: left;
+		border-right: none;
+	}
+	.navbar-nav {
+	margin: 7.5px 0px;
+	}
+	.navbar-brand {
+		height: 134px;
+	}
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    	float: none;
+    }
+
+    /* ## Front-page
+	--------------------------------------------- */
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    	float: none;
+    }
+    p.slogan {
+    	display: none;
+	}
+	.slidedescription p {
+    	font-size: 26px;
+	}
+	.frontpage_sections_content h2 a {
+		padding: 15px 0 0px 0;
+	}
+	body {
+    	padding-bottom: 0px;
+	}
+	.container p{
+		padding-top: 15px;
+	}
+	.container {
+    	width: inherit;
+	}
+
+	/* ## Life Settlements Explained
+	--------------------------------------------- */
+	.titlegradient {
+		margin: 0 30% -40px 0;
+	}
+}
+
+@media screen and (max-width:560px) {
+
+	/* ## Front-page
+	--------------------------------------------- */
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    	float: none;
+    }
+    p.slogan {
+    	display: none;
+	}
+	.slidedescription p {
+    	font-size: 24px;
+	}
+	.frontpage_sections_content h2 a {
+		padding: 15px 0 0px 0;
+	}
+	body {
+    	padding-bottom: 0px;
+	}
+	.container p{
+		padding-top: 15px;
+	}
+
+	/* ## Life Settlements Explained
+	--------------------------------------------- */
+	.titlegradient {
+		margin: 0 30% -40px 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+	/* ## Front-page
+	--------------------------------------------- */
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    	float: none;
+    }
+	.slidedescription p {
+    	font-size: 21px;
+	}
+	.frontpage_sections_content h2 a {
+		padding: 15px 0 0px 0;
+	}
+	body {
+    	padding-bottom: 0px;
+	}
+	.container p{
+		padding-top: 15px;
+	}
+
+	/* ## Life Settlements Explained
+	--------------------------------------------- */
+	.titlegradient {
+		margin: 0 30% -40px 0;
+	}
+
+}
+	
+}
+
+/*Bootstrap Overides

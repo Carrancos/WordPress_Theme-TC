@@ -1,0 +1,76 @@
+/******************************
+*
+*  Custom Rotating Text Skin 
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Preloader
+*    
+*  Sprite: 'rs-default.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+
+
+/* Background */
+.rsText,
+.rsText .rsOverflow,
+.rsText .rsSlide,
+.rsText .rsVideoFrameHolder,
+.rsText .rsThumbs {
+	background: #151515;
+	color: #FFF;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsText .rsArrow {
+	display: none;
+}
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsText .rsBullets {
+	display: none;
+}
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rsText .rsThumbsHor {
+	display: none;
+}
+.rsText .rsThumbsVer {
+	display: none;
+}
+
+/***************
+*
+*  4. Preloader
+*
+****************/
+
+.rsText .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../preloaders/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}
