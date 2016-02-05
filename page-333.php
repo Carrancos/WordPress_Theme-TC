@@ -13,7 +13,7 @@
         <h1>Agent Incentives</h1>
       </div>
       <div class="col-md-6 col-md-offset-1 ">
-        <p class="breadcrumbs">Current Invenctives</p>
+        <p class="breadcrumbs">Current Incentives</p>
       </div>
       <div class="clearfix"></div>
       
@@ -58,7 +58,7 @@
       <div class="blackopacity">
         <div class="row brochures">
           <div class="col-md-4">
-            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/client-mining-system.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/onepagethumb.jpg" alt=""></a>
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/client-mining-system.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Coming-Soon.jpg" alt=""></a>
           </div>
           <div class="col-md-8">
             <p>Client Mining System</p>
@@ -66,7 +66,7 @@
         </div>
         <div class="row brochures">
           <div class="col-md-4">
-            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/client-mining-letter.docx" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/clientmining.jpg" alt=""></a>
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Client-Mining-Letter.docx" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Client-Mining-System.jpg" alt=""></a>
           </div>
           <div class="col-md-8">
             <p>Client Mining Letter</p>
@@ -74,19 +74,19 @@
         </div>
         <div class="row brochures">
           <div class="col-md-4">
-            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/fractionalized-life-settlement-illustration.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/letterthumb.jpg" alt=""></a>
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Fractionalized-Life-Settlement-Example.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Fractionalized-Life-Settlement-Example.jpg" alt=""></a>
           </div>
           <div class="col-md-8">
-            <p>Illustration<br />
+            <p>Fractionalized Life Settlement Example<br />
             <em>one page point of sale piece</em></p>
           </div>
         </div>
         <div class="row brochures">
           <div class="col-md-4">
-            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/illustration-script.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/onepagethumb.jpg" alt=""></a>
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Illustration.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Illustration.jpg" alt=""></a>
           </div>
           <div class="col-md-8">
-            <p>Illustration Script<br />
+            <p>Illustration<br />
             <em>one page point of sale piece</em></p>
           </div>
         </div>
@@ -98,7 +98,7 @@
         <div class="blackopacity">
           <div class="row brochures">
           <div class="col-md-4">
-            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/brochure.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/brochure.jpg" alt=""></a>
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-Brochure-May2015.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-Brochure-May2015.jpg" alt=""></a>
           </div>
           <div class="col-md-8">
             <p>Brochure</p>
@@ -106,10 +106,26 @@
         </div>
         <div class="row brochures">
           <div class="col-md-4">
-            <img src="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/brochurethumb.jpg" alt="">
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-NQ-App-Packet.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-NQ-App-Packet.jpg" alt=""></a>
           </div>
           <div class="col-md-8">
-            <p>Client Application</p>
+            <p>TCS NQ</p>
+          </div>
+        </div>
+        <div class="row brochures">
+          <div class="col-md-4">
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-Brochure-May2015.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-Roth-IRA-App-Packet.jpg" alt=""></a>
+          </div>
+          <div class="col-md-8">
+            <p>TCS Roth IRA</p>
+          </div>
+        </div>
+        <div class="row brochures">
+          <div class="col-md-4">
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-Brochure-May2015.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/TCS-Traditional-IRA-App-Packet.jpg" alt=""></a>
+          </div>
+          <div class="col-md-8">
+            <p>TCS Traditional IRA</p>
           </div>
         </div>
         </div>
