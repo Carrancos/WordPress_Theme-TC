@@ -58,7 +58,7 @@
       <div class="blackopacity">
         <div class="row brochures">
           <div class="col-md-4">
-            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2015/12/client-mining-system.pdf" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Coming-Soon.jpg" alt=""></a>
+            <a href="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Coming-Soon.jpg" target="_blank"><img src="<?php echo site_url('/'); ?>/wp-content/uploads/2016/02/Coming-Soon.jpg" alt=""></a>
           </div>
           <div class="col-md-8">
             <p>Client Mining System</p>
