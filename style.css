@@ -620,6 +620,12 @@ body.page-id-317{
 .page-id-333 .breadcrumbs {
 	font-size: 30px;
 }
+.page-id-333 .modal-body .col-md-12 {
+	font-size: 18px;
+}
+.page-id-333 .modal-body .col-md-12 ul li {
+	font-size: 16px;
+}
 /* ## Footer
 --------------------------------------------- */
 .footercta{
@@ -738,6 +744,13 @@ i.fa.fa-facebook-square:hover, i.fa.fa-twitter-square:hover, i.fa.fa-pinterest-s
 	--------------------------------------------- */
 	.titlegradient {
 		margin: 0 30% -40px 0;
+	}
+
+	/* ## Life Settlements Explained
+	--------------------------------------------- */
+	.blackopacity .col-md-8 {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 @media (min-width: 768px){
